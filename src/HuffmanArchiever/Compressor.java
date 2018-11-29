@@ -88,15 +88,6 @@ public class Compressor {
         return intArray;
     }
 
-    private static String bitsArrayListToString(ArrayList<Bit> bits) {
-        String res = "";
-        for(Bit bit : bits) {
-            if(bit == Bit.ZERO) res += "0";
-            if(bit == Bit.ONE) res += "1";
-        }
-        return res;
-    }
-
     private static Bit[] stringToBitsArray(String path) {
         Bit[] bits = new Bit[path.length()];
         int counter = 0;
