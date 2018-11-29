@@ -15,10 +15,6 @@ public class Compressor {
         this.fileBytes = byteArrayToIntArray(fileBytes);
     }
 
-    public Compressor(int[] fileBytes) {
-        this.fileBytes = fileBytes;
-    }
-
     public CompressionResult compress() {
         CompressionResult.Builder compressionResultBuilder = CompressionResult.getBuilder();
         dictionary = new Dictionary();
